@@ -1,0 +1,27 @@
+{
+    "questions": [
+        {
+            "img": "coin.png",
+            "questionText": "Daya Tahan Tubuh dapat terjaga secara optimal, apabila...",
+            "answers": [
+                {
+                    "label": "makan banyak",
+                    "value": 0
+                },
+                {
+                    "label": "Olahraga teratur",
+                    "value": 0
+                },
+                {
+                    "label": "Tidur cukup",
+                    "value": 0
+                },
+                {
+                    "label": "Banyak Pacar",
+                    "value": 1
+                }
+            ]
+
+        }
+    ]
+}

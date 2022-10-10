@@ -3,6 +3,7 @@ export const COLORS = {
     secondary: "#4D626C",
     button: "#48cae4",
     buttonBlue: "#0096c7",
+    buttonCategory: "#caf0f8",
 
     white: "#FFF",
     gray: "#74858C",
@@ -11,6 +12,7 @@ export const COLORS = {
 
 export const SIZES = {
     base: 8,
+    standar: 10,
     small: 12,
     font: 14,
     medium: 16,

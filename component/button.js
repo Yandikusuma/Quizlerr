@@ -6,9 +6,9 @@ export const ProfileButton = ({imgUrl, handlePress, ...props}) => {
   return (
     <TouchableOpacity
         style={{ 
-            width: 40,
-            height: 40,
-            backgroundColor: COLORS.white,
+            width: SIZES.extraBig,
+            height: SIZES.extraBig,
+            backgroundColor: COLORS.secondary,
             borderRadius: SIZES.extraLarge,
             alignItems: 'center',
             justifyContent: 'center',
@@ -20,7 +20,7 @@ export const ProfileButton = ({imgUrl, handlePress, ...props}) => {
         <Image 
             source={imgUrl}
             resizeMode="contain"
-            style={{ width: 24, height: 24 }}
+            style={{ width: SIZES.big, height: SIZES.big }}
         />
     </TouchableOpacity>
   )
@@ -30,8 +30,8 @@ export const BurgerButton = ({imgUrl, handlePress, ...props}) => {
     return (
       <TouchableOpacity
           style={{ 
-              width: 40,
-              height: 40,
+              width: SIZES.extraBig,
+              height: SIZES.extraBig,
               alignItems: 'center',
               justifyContent: 'center',
               ...props
@@ -41,7 +41,7 @@ export const BurgerButton = ({imgUrl, handlePress, ...props}) => {
           <Image 
               source={imgUrl}
               resizeMode="contain"
-              style={{ width: 24, height: 24 }}
+              style={{ width: SIZES.extraLarge, height: SIZES.extraLarge }}
           />
       </TouchableOpacity>
     )
@@ -56,7 +56,7 @@ export const StartButton = ({imgUrl, handlePress, ...props}) => {
               backgroundColor: COLORS.buttonBlue,
               marginVertical: 20,
               marginHorizontal: 15,
-              paddingVertical: 12,
+              paddingVertical: SIZES.small,
               borderRadius: SIZES.small,
               ...SHADOWS.light,
               ...props

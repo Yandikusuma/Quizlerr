@@ -13,19 +13,19 @@ const CardRank = () => {
             justifyContent: 'space-between',
             ...SHADOWS.light,
             marginHorizontal: 15,
-            marginVertical: 10,
+            marginVertical: SIZES.standar,
             paddingHorizontal: 20
         }}
     >
         <View
-            style={{ flexDirection: 'row', paddingVertical: 10, alignItems: 'center', justifyContent: 'center' }}
+            style={{ flexDirection: 'row', paddingVertical: SIZES.standar, alignItems: 'center', justifyContent: 'center' }}
         >
             <Image 
                 source={assets.king}
                 style={{ width: 30, height: 30 }}
                 
             />
-            <View style={{ paddingLeft: 10 }}>
+            <View style={{ paddingLeft: SIZES.standar }}>
                 <Text style={{ fontFamily: 'Kanit-Regular', color: COLORS.gray }}>Rank</Text>
                 <Text style={{fontFamily: 'RobotoSlab-VariableFont_wght', color: COLORS.primary}}>116</Text>
             </View>
@@ -38,7 +38,7 @@ const CardRank = () => {
                 style={{ width: 30, height: 30 }}
                 
             />
-            <View style={{ paddingLeft: 10 }}>
+            <View style={{ paddingLeft: SIZES.standar }}>
                 <Text style={{ fontFamily: 'Kanit-Regular', color: COLORS.gray }}>Points</Text>
                 <Text style={{fontFamily: 'RobotoSlab-VariableFont_wght', color: COLORS.primary}}>2.801</Text>
             </View>

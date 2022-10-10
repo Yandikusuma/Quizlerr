@@ -1,19 +1,22 @@
 import React from 'react';
 import { View, Text, Image } from 'react-native';
 import { ProfileButton, BurgerButton, StartButton } from '../component';
+import { useNavigation } from '@react-navigation/native';
 import { COLORS, SIZES, SHADOWS, assets } from '../constants';
 import CardRank from '../component/cardRank';
 import SliderImage from '../component/sliderImage';
 
 
 const Home = () => {
+  const navigation = useNavigation();
+
   return (
     <View style={{flex: 1}}>
       <View
         style={{ 
             flexDirection: 'row', 
             justifyContent: "space-between", 
-            paddingHorizontal: 10, 
+            paddingHorizontal: SIZES.standar, 
             paddingVertical: 20 
         }}
       >
@@ -52,7 +55,9 @@ const Home = () => {
       </View>
       <CardRank />
       <SliderImage />
-      <StartButton />
+      <StartButton 
+        handlePress={() => navigation.navigate("Category")}
+      />
     </View>
   )
 }
