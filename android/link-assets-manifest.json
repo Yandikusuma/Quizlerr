@@ -1,0 +1,33 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/AbyssinicaSIL-Regular.ttf",
+      "sha1": "6d928ce9fbe30fdebaf6878750ed2ad5acb7ff87"
+    },
+    {
+      "path": "assets/fonts/GemunuLibre-VariableFont_wght.ttf",
+      "sha1": "b84866c1507a7ee90cbf062cb7503498d0051f61"
+    },
+    {
+      "path": "assets/fonts/Kanit-Bold.ttf",
+      "sha1": "4d376a5447efe2ece1e3e39ff0fc2bbf3af0e5f8"
+    },
+    {
+      "path": "assets/fonts/Kanit-Regular.ttf",
+      "sha1": "4d7b70e9717ae0adecc332fac9af7457063886a4"
+    },
+    {
+      "path": "assets/fonts/Oswald-VariableFont_wght.ttf",
+      "sha1": "380c3d54a3116a224edcb4bf83e043a0ee140fe1"
+    },
+    {
+      "path": "assets/fonts/RobotoSlab-VariableFont_wght.ttf",
+      "sha1": "79e62139cca56d6e8678809c09d0f218e2beb47f"
+    },
+    {
+      "path": "assets/fonts/Silkscreen-Bold.ttf",
+      "sha1": "9fcf1f80d630e613f44957880064fc22626e2d4a"
+    }
+  ]
+}
