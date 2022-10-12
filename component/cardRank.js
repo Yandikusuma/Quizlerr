@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, Image } from 'react-native';
 import { COLORS, SIZES, assets, SHADOWS } from '../constants';
 
-const CardRank = () => {
+const CardRank = (props) => {
   return (
     <View
         style={{
@@ -40,7 +40,7 @@ const CardRank = () => {
             />
             <View style={{ paddingLeft: SIZES.standar }}>
                 <Text style={{ fontFamily: 'Kanit-Regular', color: COLORS.gray }}>Points</Text>
-                <Text style={{fontFamily: 'RobotoSlab-VariableFont_wght', color: COLORS.primary}}>2.801</Text>
+                <Text style={{fontFamily: 'RobotoSlab-VariableFont_wght', color: COLORS.primary}}>{props.score}</Text>
             </View>
         </View>
     </View>

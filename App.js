@@ -7,6 +7,7 @@ import Category from './screens/category';
 import MathQuestion from './question/mathQuestion';
 import Result from './screens/result';
 import QuizMath from './question/quizMath';
+import UserLogin from './screens/userLogin';
 
 
 const theme ={
@@ -27,8 +28,9 @@ const App = () => {
         screenOptions={{ 
           headerShown: false
         }}
-        initialRouteName="Home"
+        initialRouteName="UserLogin"
       >
+        <Stack.Screen name="UserLogin" component={UserLogin}/>
         <Stack.Screen name="Home" component={Home}/>
         <Stack.Screen name="Category" component={Category}/>
         <Stack.Screen name="MathQuestion" component={MathQuestion}/>

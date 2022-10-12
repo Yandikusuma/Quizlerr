@@ -1,7 +1,7 @@
 {
     "questions": [
         {
-            "img": "coin.png",
+            "img": "https://img.freepik.com/free-vector/set-icons-illusionist-magician-theme_87771-10494.jpg?w=826&t=st=1665470866~exp=1665471466~hmac=e1b287f1853035364099b110916fcac1efb7565d569a1c4a3ede00770996dbb5",
             "questionText": "Daya Tahan Tubuh dapat terjaga secara optimal, apabila...",
             "answers": [
                 {
@@ -22,6 +22,78 @@
                 }
             ]
 
+        },
+        {
+            "img": "https://img.freepik.com/free-vector/set-icons-illusionist-magician-theme_87771-10494.jpg?w=826&t=st=1665470866~exp=1665471466~hmac=e1b287f1853035364099b110916fcac1efb7565d569a1c4a3ede00770996dbb5",
+            "questionText": "After more than seven decades of absence, jaguars are being reintroduced into the wetlands of which country",
+            "answers": [
+                {
+                    "label": "makan banyak",
+                    "value": 0
+                },
+                {
+                    "label": "Olahraga teratur",
+                    "value": 1
+                },
+                {
+                    "label": "Tidur cukup",
+                    "value": 0
+                },
+                {
+                    "label": "Banyak Pacar",
+                    "value": 0
+                }
+            ]
+
+        },
+        {
+            "img": "https://img.freepik.com/free-vector/set-icons-illusionist-magician-theme_87771-10494.jpg?w=826&t=st=1665470866~exp=1665471466~hmac=e1b287f1853035364099b110916fcac1efb7565d569a1c4a3ede00770996dbb5",
+            "questionText": "After more than seven decades of absence, jaguars are being reintroduced into the wetlands of which country",
+            "answers": [
+                {
+                    "label": "makan banyak",
+                    "value": 1
+                },
+                {
+                    "label": "Olahraga teratur",
+                    "value": 0
+                },
+                {
+                    "label": "Tidur cukup",
+                    "value": 0
+                },
+                {
+                    "label": "Banyak Pacar",
+                    "value": 0
+                }
+            ]
+
         }
+        ,
+        {
+            "img": "https://img.freepik.com/free-vector/set-icons-illusionist-magician-theme_87771-10494.jpg?w=826&t=st=1665470866~exp=1665471466~hmac=e1b287f1853035364099b110916fcac1efb7565d569a1c4a3ede00770996dbb5",
+            "questionText": "After more than seven decades of absence, jaguars are being reintroduced into the wetlands of which country",
+            "answers": [
+                {
+                    "label": "makan banyak",
+                    "value": 1
+                },
+                {
+                    "label": "Olahraga teratur",
+                    "value": 0
+                },
+                {
+                    "label": "Tidur cukup",
+                    "value": 0
+                },
+                {
+                    "label": "Banyak Pacar",
+                    "value": 0
+                }
+            ]
+
+        }
+        
+        
     ]
 }

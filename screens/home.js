@@ -7,11 +7,11 @@ import CardRank from '../component/cardRank';
 import SliderImage from '../component/sliderImage';
 
 
-const Home = () => {
+const Home = (props) => {
   const navigation = useNavigation();
 
   return (
-    <View style={{flex: 1}}>
+    <View>
       <View
         style={{ 
             flexDirection: 'row', 
@@ -37,7 +37,7 @@ const Home = () => {
                     fontFamily: 'Kanit-Bold',
                     color: COLORS.gray
                 }}
-            >Hi Yandik </Text>
+            >Hi {props.name} </Text>
             <Image 
                 source={assets.goodbye}
                 resizeMode="contain"
@@ -53,7 +53,9 @@ const Home = () => {
             }}
         >Let's Play</Text>
       </View>
-      <CardRank />
+      <CardRank 
+        score={props.totalScore}
+      />
       <SliderImage />
       <StartButton 
         handlePress={() => navigation.navigate("Category")}

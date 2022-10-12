@@ -1,8 +1,20 @@
+import React, { useState, useEffect } from 'react';
 import { View, Text, Image, TouchableOpacity } from 'react-native'
-import React from 'react'
 import { COLORS, SIZES } from '../constants'
+import { readScore } from '../store/storeScore'
+
 
 const Result = ({navigation}) => {
+    const [scoreString, setScoreString] = useState(null);
+
+    const getScoreFromFile = async () => {
+        const scoreString = await readScore();
+        setScoreString(scoreString);
+    }
+
+    useEffect(() => {
+        getScoreFromFile();
+    })
   return (
     <View style={{ flex: 1 }}>
         <View style={{justifyContent: 'center', alignItems: 'center', marginVertical: 20}}>
@@ -13,15 +25,17 @@ const Result = ({navigation}) => {
                 }}
             >result</Text>
         </View>
-        <View style={{justifyContent: 'center', alignItems: 'center', marginTop: 30}}>
-            <Text
-                style={{
-                    fontSize: SIZES.large,
-                    fontFamily: 'Kanit-Bold',
-                    color: COLORS.secondary
-                }}
-            >Score: </Text>
-        </View>
+        {(scoreString !== 'noscore' && scoreString !== null) ?
+            <View style={{justifyContent: 'center', alignItems: 'center', marginTop: 30}}>
+                <Text
+                    style={{
+                        fontSize: SIZES.large,
+                        fontFamily: 'Kanit-Bold',
+                        color: COLORS.secondary
+                    }}
+                >Score: {scoreString}</Text>
+            </View>  : null
+        }
         <View style={{marginVertical: 50, flex: 1}}>
             <Image 
                 source={{ uri: 'https://img.freepik.com/free-vector/portrait-man-woman-with-facepalm-gestures_10045-635.jpg?w=740&t=st=1665397436~exp=1665398036~hmac=e0dcd186c4b2fee68111ec9f220c776244dad7f1f42e2fcd6db1342f0e0676e7' }}
@@ -41,7 +55,7 @@ const Result = ({navigation}) => {
                     justifyContent: 'center',
                     alignItems: 'center',
                 }}
-                onPress={() => navigation.navigate('Home')}
+                onPress={() => navigation.navigate('UserLogin')}
             >
                 <Text
                     style={{
